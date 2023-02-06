@@ -9,10 +9,10 @@ if game.PlaceId == 142823291 then
     LPlayerSection:NewButton("Fly", "Press E To Fly", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/KtLKcbxr"))()
     end)
-    LPplayerSection:NewTextBox("Speed", "Set Your Players Speed", function(txt)
+    LPlayerSection:NewTextBox("Speed", "Set Your Players Speed", function(txt)
         game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = txt
     end)
-    LPplayerSection:NewTextBox("Jump Power", "Set Your Players Jump Power", function(txt)
+    LPlayerSection:NewTextBox("Jump Power", "Set Your Players Jump Power", function(txt)
         game.Players.LocalPlayers.Character.Humanoid.JumpPower = txt
     end)
 
