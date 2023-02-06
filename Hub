@@ -1,0 +1,57 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+if theme == "" then
+    local Window = Library.CreateLib("unleaked GUI", "DarkTheme")
+else
+    local Window = Library.CreateLib("unleaked GUI", theme)
+end
+if game.PlaceId == 142823291 then
+    --local player
+    local LPlayer = Window:NewTab("LocalPlayer")
+    local LPlayerSection = LPlayer:NewSection("Main")
+
+    LPlayerSection:NewButton("Fly", "Press E To Fly", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KtLKcbxr"))()
+    end)
+    LPplayerSection:NewTextBox("Speed", "Set Your Players Speed", function(txt)
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = txt
+    end)
+    LPplayerSection:NewTextBox("Jump Power", "Set Your Players Jump Power", function(txt)
+        game.Players.LocalPlayers.Character.Humanoid.JumpPower = txt
+    end)
+
+
+    --FE stuff
+    local FE = Window:NewTab("FE stuff")
+    local FEsection = FE:NewSection("Admin")
+    FEsection:NewButton("infinite yield", "Gives You FE admin", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end)
+    --Game
+    local GameScripts = Window:NewTab(game.PlaceName)
+    local Scripts = GameScripts:NewSection("Script(s)")
+    Scripts:NewButton("Script", "Script For Game (Made by luka roblox :) )", function()
+        loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+    end)
+else
+    --local player
+    local LPlayer = Window:NewTab("LocalPlayer")
+    local LPlayerSection = LPlayer:NewSection("Main")
+
+    LPlayerSection:NewButton("Fly", "Press E To Fly", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KtLKcbxr"))()
+    end)
+    LPplayerSection:NewTextBox("Speed", "Set Your Players Speed", function(txt)
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = txt
+    end)
+    LPplayerSection:NewTextBox("Jump Power", "Set Your Players Jump Power", function(txt)
+        game.Players.LocalPlayers.Character.Humanoid.JumpPower = txt
+    end)
+
+
+    --FE stuff
+    local FE = Window:NewTab("FE stuff")
+    local FEsection = FE:NewSection("Admin")
+    FEsection:NewButton("infinite yield", "Gives You FE admin", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end)
+end
