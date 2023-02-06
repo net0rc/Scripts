@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 if theme == "" then
-    local Window = Library.CreateLib("unleaked GUI", "DarkTheme")
+    local Window = Library.CreateLib("Unamed Hub", "DarkTheme")
 else
-    local Window = Library.CreateLib("unleaked GUI", theme)
+    local Window = Library.CreateLib("Unnamed Hub", theme)
 end
 if game.PlaceId == 142823291 then
     --local player
