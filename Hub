@@ -10,10 +10,10 @@ if game.PlaceId == 142823291 then
         loadstring(game:HttpGet("https://pastebin.com/raw/KtLKcbxr"))()
     end)
     LPlayerSection:NewTextBox("Speed", "Set Your Players Speed", function(txt)
-        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = txt
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
     end)
     LPlayerSection:NewTextBox("Jump Power", "Set Your Players Jump Power", function(txt)
-        game.Players.LocalPlayers.Character.Humanoid.JumpPower = txt
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
     end)
 
 
