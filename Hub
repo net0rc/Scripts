@@ -24,7 +24,7 @@ if game.PlaceId == 142823291 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     --Game
-    local GameScripts = Window:NewTab(game.PlaceName)
+    local GameScripts = Window:NewTab("MM2")
     local Scripts = GameScripts:NewSection("Script(s)")
     Scripts:NewButton("Script", "Script For Game (Made by luka roblox :) )", function()
         loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
